@@ -1,3 +1,17 @@
-name: Your New Jekyll Site
+safe: false
+baseurl: /
+url: http://localhost:4000
+
+name: Bruno Passos
+description: A web/UX designer and front-end developer living in Amsterdam and working for the awesome Booking.com
+url: http://brunopassos.com
+domain: brunopassos.com
+comments: true
+twitter-username: brunopassos
+
+source: 
+destination: ./_site
+plugins: ./_plugins
+
 markdown: redcarpet
 pygments: true
