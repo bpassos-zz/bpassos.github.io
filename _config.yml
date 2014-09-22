@@ -1,12 +1,63 @@
 # Site settings
+safe:        false
+baseurl:     /
+url: http://localhost:4000
 title: Bruno Passos
 email: passosbruno@gmail.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-baseurl: ""
-url: "http://bpassos.github.io"
 twitter_username: brunopassos
 github_username:  bpassos
+name: Bruno Passos
+description: Web/UX designer and front-end developer living in Amsterdam and working for the amazing Booking.com
+url: http://bpassos.github.io
+domain: bpassos.github.io
+commentlinks: true
+twitter-username: brunopassos
+feedburnerurl: 
+google-analytics-tracking-id:
 
-# Build settings
-markdown: kramdown
-permalink: pretty
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+paginate_path: 'blog/page:num'
+
+future:      true
+lsi:         false
+pygments:    false
+markdown:    maruku
+permalink:   /:title/
+paginate: 5
+
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_engine: blahtex
+  png_dir:    images/latex
+  png_url:    /images/latex
+
+rdiscount:
+  extensions: []
+
+kramdown:
+  auto_ids: true,
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: inline
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: style
+
+excerpt_separator: "<!-- more -->"
+
+
+# # Build settings
+# markdown: kramdown
+# permalink: pretty
+
+
+
