@@ -249,14 +249,14 @@ body .site {
     background-image: url('/../assets/img/treehouse-32@2x.png');
   }
 }
-.email {
+/*.email {
   background-image: url('/../assets/img/email-32.png');
   margin-top: -2px;
-}
+}*/
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
-  .email {
+  /*.email {
     background-image: url('/../assets/img/email-32@2x.png');
-  }
+  }*/
 }
 .email:hover {
   -webkit-transform: rotate(30deg);
