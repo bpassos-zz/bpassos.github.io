@@ -1,8 +1,8 @@
 # Site settings
 title: Bruno Passos
 email: passosbruno@gmail.com
-description: ""
-baseurl: ""
+#description: ""
+#baseurl: ""
 url: "http://brunopassos.com"
 twitter_username: brunopassos
 github_username:  bpassos
