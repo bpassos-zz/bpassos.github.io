@@ -1,0 +1,28 @@
+<header class="site-header">
+
+  <div class="wrap">
+    <section id="logo">
+      <section id="square_one"></section>
+      <section id="square_two"></section>
+      <section id="square_three"></section>
+    </section>
+    <section class="title">
+      <a href="{{ site.baseurl }}/">bruno passos
+        <p>WEB DESIGNER & FRONT-END { dev }</p>
+      </a>
+    </section>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        
+      </a>
+      <div class="trigger">
+        {% for page in site.pages %}
+          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+
+  </div>
+
+</header>
