@@ -35,8 +35,15 @@ a:visited { color: #205caa; }
   position: relative;
 }
 
+.clearfix:after {
+  content:""; 
+  display:table;
+  clear: both;
+}
+
 li {
   list-style: none;
+  display: inline-block;
 }
 
 
@@ -46,8 +53,9 @@ li {
 /* Site header */
 
 .site-header {
-  border-top: 5px solid #333;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #060010;
+  padding: 5px 0 0;
+  opacity: 0.9;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -130,11 +138,60 @@ li {
     font-size: 11px;
   }
 
+/* Site hero */
+
+.hero {
+  margin-top: 69px;
+  margin-bottom: -69px;
+  line-height: 0;
+  height: 278px;
+  overflow: hidden;
+}
+
+  #instafeed a img {
+    width: 8.332%;
+  }
+
+.social {
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+  .social ul li {
+    margin: 0 15px;
+    font-size: 30px;
+    color: #3B2959;
+  }
+
+  .social ul li a:hover {
+    color: #3B2959;
+    -webkit-transition:color 400ms;
+    transition:color 400ms;
+  }
+
+/* Dribbble feed */
+
+.dribbble-feed-wrapper {
+  background: #F5F5F5;
+  padding: 30px;
+}
+
+.shot {
+  float: left;
+  margin: 5px;
+  background: #FFF;
+  padding: 8px 8px 1px;
+}
+
+.shot a img {
+  width: 240px;
+}
+
 /* Site footer */
 
 .site-footer {
-  border-top: 1px solid #e8e8e8;
   padding: 30px 0;
+  background: #F7F7F7;
 }
 
 .footer-heading {
@@ -207,6 +264,9 @@ li {
 .home .intro {
   margin: 30px 0;
   font-size: 20px;
+  font-size: 21px;
+  color: #666;
+  text-align: center;
 }
 
 .posts { list-style-type: none; }
