@@ -129,7 +129,6 @@ li {
     color: #FFF;
     display: inline-block;
     position: absolute;
-    left: 0;
     top: 0;
   }
   .title a p {
@@ -297,12 +296,29 @@ li {
 
 .posts { list-style-type: none; }
 
-.posts li { margin-bottom: 30px; }
+.posts li { 
+  margin-bottom: 30px;
+  padding-bottom: 20px; 
+  border-bottom: 1px solid #DDD;
+}
+
+.posts .post-info {
+  margin-bottom: 10px;
+}
+
+.posts .post-cat {
+  background: #E4DFC6;
+  padding: 2px 15px;
+  border-radius: 3px;
+  position: absolute;
+  right: 0;
+}
 
 .posts .post-link {
   font-size: 24px;
   letter-spacing: -1px;
   line-height: 1;
+  font-weight: 400;
 }
 
 .posts .post-date {
@@ -391,7 +407,7 @@ li {
 .post pre,
 .post code {
   border: 1px solid #d5d5e9;
-  background-color: #eef;
+  background-color: #E5E5E5;
   padding: 8px 12px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
