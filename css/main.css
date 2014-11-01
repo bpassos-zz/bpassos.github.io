@@ -510,6 +510,24 @@ li {
 
 @media screen and (max-width: 750px) {
 
+  .home .intro {
+    font-size: 14px;
+  }
+
+  .home .intro p {
+    font-size: 16px;
+  }
+
+  .site-header {
+    height: 45px;
+  }
+
+  .title a {
+    font-size: 1.6em;
+    left: 10px;
+    top: -5px;
+  }
+
   .footer-col-1 { width: 50%; }
 
   .footer-col-2 {
