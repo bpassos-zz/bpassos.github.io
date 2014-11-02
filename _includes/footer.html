@@ -1,27 +1,8 @@
 <footer class="site-footer">
-
   <div class="wrap">
-
-    <div class="footer-col-1 column">
-      <ul>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
-
-    <div class="footer-col-2 column">
-      <ul>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
-
-    <div class="footer-col-3 column">
-      <p class="text">{{ site.description }}</p>
-    </div>
-
+    <p>&copy; Copyright brunopassos.com 2014</p>
+    {% include social.html %}
   </div>
-
 </footer>
 
 <script type="text/javascript" src="/../scripts/insta.js"></script>
@@ -55,6 +36,10 @@ $(document).ready(function getDribbbleShots() {
           html.push('alt="' + shot.title + '"></a></div>');
       });
       $('.dribbble-feed').html(html.join(''));
-  }, {page: 1, per_page: 9});
+  }, 
+  {
+    page: 1, 
+    per_page: 15
+  });
 });
 </script>
