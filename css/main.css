@@ -142,7 +142,6 @@ li {
     /*width: 250px;*/
     font-family: 'Advent Pro', sans-serif;
     font-size: 1.6em;
-    font-weight: 600;
     color: #C0C0C0;
     display: inline-block;
     position: absolute;
@@ -608,6 +607,7 @@ li {
   .title a{
     /*width: 250px;*/
     top: 0px;
+    left: 12px;
   }
 
   .post-image {
@@ -651,15 +651,21 @@ li {
   .site-nav {
     position: fixed;
     z-index: 10;
+    top: 0px; right: 8px;
+  }
+
+  /*.site-nav {
+    position: fixed;
+    z-index: 10;
     top: 14px; right: 8px;
     background-color: white;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #e8e8e8;
-  }
+  }*/
 
-  .site-nav .menu-icon {
+  /*.site-nav .menu-icon {
     display: block;
     font-size: 24px;
     color: #505050;
@@ -685,7 +691,7 @@ li {
     line-height: 1.25;
     padding: 5px 10px;
     margin: 0;
-  }
+  }*/
 
   .post-header h1 { font-size: 36px; }
   .post-content h2 { font-size: 28px; }
