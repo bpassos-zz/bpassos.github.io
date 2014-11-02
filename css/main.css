@@ -96,9 +96,16 @@ li {
 
 .site-nav .page-link {
   margin-left: 20px;
-  color: #BDBDBD;
+  color: #C0C0C0;
   letter-spacing: -.5px;
+  -webkit-transition:color 400ms;
+  transition:color 400ms;
 }
+
+  .site-nav a:hover {
+    text-decoration: none;
+    color: #FFF;
+  }
 
   /* Site header - logo */
 
@@ -134,16 +141,18 @@ li {
     /*width: 250px;*/
     font-family: 'Advent Pro', sans-serif;
     font-size: 1.6em;
-    color: #FFF;
+    color: #C0C0C0;
     display: inline-block;
     position: absolute;
     left: 10px;
     top: 0;
+    -webkit-transition:color 400ms;
+    transition:color 400ms;
   }
 
    .title a:hover {
     text-decoration: none;
-    font-weight: bold;
+    color: #FFF;
   }
 
   .title a p {
