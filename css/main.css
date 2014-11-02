@@ -142,6 +142,7 @@ li {
     /*width: 250px;*/
     font-family: 'Advent Pro', sans-serif;
     font-size: 1.6em;
+    font-weight: 600;
     color: #C0C0C0;
     display: inline-block;
     position: absolute;
@@ -602,6 +603,19 @@ li {
 
   .home .intro p {
     font-size: 16px;
+  }
+
+  .title a{
+    /*width: 250px;*/
+    top: 0px;
+  }
+
+  .post-image {
+    margin-top: 50px;
+  }
+
+  .shot a img {
+    width: 200px;
   }
 
   .site-header {
