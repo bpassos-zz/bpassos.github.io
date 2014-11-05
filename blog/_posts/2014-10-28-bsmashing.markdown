@@ -21,7 +21,7 @@ Zoe’s presentation was followed by Vitaly Friedman, co-founder and chief edito
     “Responsive design is just a tool, but it’s a very good and powerful tool to help us cope with this multi-dimensional web that we have today.”
 </p>
 
-<img src="/../images/bsmashing-Vitaly-small.jpg" alt="Vitaly Friedman - #bsmashing" width="100%">
+<img src="/../assets/img/bsmashing-Vitaly-small.jpg" alt="Vitaly Friedman - #bsmashing" width="100%">
 
 We love putting on these events and connecting with our industry peers — especially when we can offer something back to a community we’ve all benefitted from so much in our own careers. We will be hosting the Sketch & Framer group in October and are always on the look out for more opportunities to host such events. Watch this space!
 
