@@ -9,7 +9,7 @@
 html, body { height: 100%; }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Open sans', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
@@ -18,7 +18,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
 
-a         { color: #2a7ae2; text-decoration: none; }
+a         { color: #2a7ae2; text-decoration: none; font-weight: 400;}
 a:hover   { color: #000; text-decoration: underline; }
 a:visited { color: #205caa; }
 
@@ -32,6 +32,26 @@ a:visited { color: #205caa; }
   padding: 0 30px;
   margin: 0 auto;
   zoom: 1;
+  position: relative;
+}
+
+.wrap-wide {
+  max-width: 1300px;
+  padding: 0 30px;
+  margin: 0 auto;
+  zoom: 1;
+  position: relative;
+}
+
+.clearfix:after {
+  content:""; 
+  display:table;
+  clear: both;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
 }
 
 
@@ -41,10 +61,13 @@ a:visited { color: #205caa; }
 /* Site header */
 
 .site-header {
-  border-top: 5px solid #333;
-  border-bottom: 1px solid #e8e8e8;
-  min-height: 56px;
-  background-color: white;
+  background-color: #060010;
+  padding: 5px 0 0;
+  opacity: 0.9;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 5;
 }
 
 .site-title,
@@ -65,20 +88,158 @@ a:visited { color: #205caa; }
   line-height: 56px;
 }
 
+.site-nav ul li {
+  display: inline-block;
+}
+
 .site-nav .menu-icon { display: none; }
 
 .site-nav .page-link {
   margin-left: 20px;
-  color: #727272;
+  font-size: 14px;
+  color: #C0C0C0;
   letter-spacing: -.5px;
+  -webkit-transition:color 400ms;
+  transition:color 400ms;
+}
+
+  .site-nav a:hover {
+    text-decoration: none;
+    color: #FFF;
+  }
+
+  /* Site header - logo */
+
+  #logo {
+    /*width: 65px;
+    height: 60px;
+    margin: 15px auto 5px;*/
+    padding: 5px 5px 10px 0;
+    display: inline-block;
+    float: left;
+  }
+  #square_one {
+    width: 22px;
+    height: 22px;
+    background: #FFF;
+    float: left;
+  }
+  #square_two {
+    margin: 0 0 0 5px;
+    width: 22px;
+    height: 22px;
+    background: #FFF;
+    float: left;
+  }
+  #square_three {
+    margin: 27px 0 0 0;
+    width: 22px;
+    height: 22px;
+    background: #FFF;
+  }
+
+  .title a{
+    /*width: 250px;*/
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 1.6em;
+    color: #C0C0C0;
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 4px;
+    -webkit-transition:color 400ms;
+    transition:color 400ms;
+  }
+
+   .title a:hover {
+    text-decoration: none;
+    color: #FFF;
+  }
+
+  .title a p {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+  }
+
+/* Site hero */
+
+.hero {
+  margin-top: 69px;
+  margin-bottom: -69px;
+  line-height: 0;
+  height: 278px;
+  overflow: hidden;
+}
+
+  #instafeed a img {
+    width: 8.332%;
+  }
+
+.social {
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+  .social ul li {
+    margin: 0 15px;
+    font-size: 30px;
+    color: #3B2959;
+  }
+
+  .social ul li a:hover {
+    color: #AA2064;
+    -webkit-transition:color 400ms;
+    transition:color 400ms;
+  }
+
+/* Dribbble feed */
+
+.dribbble-feed-wrapper {
+  background: #F5F5F5;
+  padding: 30px;
+}
+
+.dribbble-feed-wrapper .wrap h1 {
+  text-align: center;
+  font-size: 18px;
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  color: #666;
+}
+
+.shot {
+  float: left;
+  margin: 5px;
+  background: #FFF;
+  padding: 8px 8px 1px;
+}
+
+.shot a img {
+  width: 240px;
 }
 
 /* Site footer */
 
 .site-footer {
-  border-top: 1px solid #e8e8e8;
   padding: 30px 0;
+  background: #FFF;
+  border-top: 1px solid #F5F5F5;
 }
+
+  .site-footer .wrap {
+    text-align: center;
+  }
+
+  .site-footer .social {
+    margin: 20px 0 0 0;
+  }
+
+  .site-footer .social ul li {
+    margin: 0 9px;
+    font-size: 26px;
+    color: #3B2959;
+  }
 
 .footer-heading {
   font-size: 18px;
@@ -136,6 +297,7 @@ a:visited { color: #205caa; }
 /* ----------------------------------------------------------*/
 
 .page-content {
+  margin-top: 60px;
   padding: 30px 0;
   background-color: #fff;
 }
@@ -144,46 +306,133 @@ a:visited { color: #205caa; }
 /* Home styles */
 /* ----------------------------------------------------------*/
 
-.home h1 { margin-bottom: 25px; }
+.home {
+  margin-top: 15px;
+}
+
+.home h1 { 
+  margin-bottom: 35px;
+  font-size: 25px;
+}
+
+.home .profile {
+  text-align: center;
+}
+
+.home .profile img {
+  width: 160px;
+}
+
+.home .intro {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #666;
+  text-align: center;
+  font-weight: 600;
+}
+
+  .home .intro p {
+    margin: 40px 0;
+    font-size: 18px;
+    color: #666;text-align: center;
+    font-weight: 300;
+  }
+
+  .home .intro .intro-thin {
+    font-weight: 300;
+    color: #999;
+  }
 
 .posts { list-style-type: none; }
 
-.posts li { margin-bottom: 30px; }
+  .posts p {
+    margin: 10px 0;
+    color: #646464;
+  }
+
+.posts li { 
+  margin-bottom: 30px;
+  padding-bottom: 20px; 
+  border-bottom: 1px solid #DDD;
+}
+
+.posts .post-info {
+  margin-bottom: 10px;
+}
+
+.posts .post-cat {
+  background: #E4DFC6;
+  padding: 2px 15px;
+  border-radius: 3px;
+  position: absolute;
+  right: 30px;
+}
 
 .posts .post-link {
   font-size: 24px;
   letter-spacing: -1px;
   line-height: 1;
+  font-weight: 400;
 }
 
 .posts .post-date {
-  display: block;
   font-size: 15px;
   color: #818181;
+  background: #F4F4F4;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 3px 10px;
+}
+
+.wrap .post-category {
+  color: #A3A3A3;
+  border-bottom: 1px solid #ddd;
+  padding: 0 0 17px;
+}
+
+.wrap .category-span {
+  color: #797979;
+  background: #E4DFC6;
+  padding: 3px 10px;
+  border-radius: 3px;
 }
 
 
 /* Post styles */
 /* ----------------------------------------------------------*/
 
-.post-header { margin: 10px 0 30px; }
+.post-header { 
+  margin: 10px 0 30px;
+  padding-top: 70px;
+}
 
 .post-header h1 {
   font-size: 42px;
   letter-spacing: -1.75px;
   line-height: 1;
   font-weight: 300;
+  color: white;
+  font-weight: 300;
+  font-family: 'open sans', Helvetica, sans-serif;
+  margin-bottom: 15px;
 }
 
 .post-header .meta {
   font-size: 15px;
   color: #818181;
   margin-top: 5px;
+  color: #DDD;
 }
 
-.post-content { margin: 0 0 30px; }
+.post-content { 
+  margin: 0 0 30px;
+  font-size: 20px;
+}
 
-.post-content > * { margin: 20px 0; }
+.post-content > * { 
+  margin: 20px 0;
+  line-height: 33px
+}
 
 
 .post-content h1,
@@ -228,7 +477,7 @@ a:visited { color: #205caa; }
 .post pre,
 .post code {
   border: 1px solid #d5d5e9;
-  background-color: #eef;
+  background-color: #E5E5E5;
   padding: 8px 12px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -259,6 +508,22 @@ a:visited { color: #205caa; }
 }
 
 .post pre.terminal code { background-color: #333; }
+
+.post-image {
+  margin-top: 61px;
+  width: 100%;
+  height: 300px;
+  background: #ddd;
+  margin-bottom: -60px;
+  background-size: 100%;
+  background-position: 0px -440px;
+}
+
+.post-quote {
+  font-size: 20px;
+  color: #888;
+  margin: 35px;
+}
 
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/
@@ -331,6 +596,32 @@ a:visited { color: #205caa; }
 
 @media screen and (max-width: 750px) {
 
+  .home .intro {
+    font-size: 14px;
+  }
+
+  .home .intro p {
+    font-size: 16px;
+  }
+
+  .title a{
+    /*width: 250px;*/
+    top: 0px;
+    left: 12px;
+  }
+
+  .post-image {
+    margin-top: 50px;
+  }
+
+  .shot a img {
+    width: 200px;
+  }
+
+  .site-header {
+    height: 45px;
+  }
+
   .footer-col-1 { width: 50%; }
 
   .footer-col-2 {
@@ -352,9 +643,18 @@ a:visited { color: #205caa; }
 
 @media screen and (max-width: 600px) {
 
-  .wrap { padding: 0 12px; }
+  .wrap { 
+    padding: 0 12px;
+    position: relative;
+  }
 
   .site-nav {
+    position: fixed;
+    z-index: 10;
+    top: 0px; right: 8px;
+  }
+
+  /*.site-nav {
     position: fixed;
     z-index: 10;
     top: 14px; right: 8px;
@@ -363,9 +663,9 @@ a:visited { color: #205caa; }
     -moz-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #e8e8e8;
-  }
+  }*/
 
-  .site-nav .menu-icon {
+  /*.site-nav .menu-icon {
     display: block;
     font-size: 24px;
     color: #505050;
@@ -386,12 +686,12 @@ a:visited { color: #205caa; }
   .site-nav:hover .trigger { display: block; }
 
   .site-nav .page-link {
-    display: block;
+    display: block;    
     text-align: right;
     line-height: 1.25;
     padding: 5px 10px;
     margin: 0;
-  }
+  }*/
 
   .post-header h1 { font-size: 36px; }
   .post-content h2 { font-size: 28px; }
