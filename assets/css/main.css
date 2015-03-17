@@ -415,6 +415,13 @@ li {
     padding: 5px 10px;
     border-radius: 3px;
     color: #1F1A28;
+    transition: background 100ms;
+  }
+
+  .bread-crumbs a:hover {
+    background: #1F1A28;
+    color: #DDD;
+    text-decoration: none;
   }
 
   .bread-crumbs i {
