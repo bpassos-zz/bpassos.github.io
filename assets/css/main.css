@@ -298,7 +298,6 @@ li {
 
 .page-content {
   margin-top: 60px;
-  padding: 30px 0;
   background-color: #fff;
 }
 
@@ -401,6 +400,27 @@ li {
 /* Post styles */
 /* ----------------------------------------------------------*/
 
+.bread-crumbs-wrapper {
+  background: #F0F0F0;
+  padding: 13px;
+  margin-bottom: 30px;
+}
+  .bread-crumbs {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .bread-crumbs a {
+    background: #DDD;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #1F1A28;
+  }
+
+  .bread-crumbs i {
+    font-size: 20px;
+    margin-right: 2px;
+  }
 .post-header { 
   margin: 10px 0 30px;
   padding-top: 70px;

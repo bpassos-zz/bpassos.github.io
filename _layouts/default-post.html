@@ -18,7 +18,13 @@
     </div>
 
     <div class="page-content">
+      <div class="bread-crumbs-wrapper">
+        <div class="bread-crumbs">
+          <a href="{{ "/blog" | prepend: site.baseurl }}"><i class="fa fa-arrow-circle-left"></i> Blog</a>
+        </div>
+      </div>
       <div class="wrap">
+
       <p class="post-category">Post category: <span class="category-span">{{ page.categories.last }}</span></p>
       {{ content }}
       </div>
