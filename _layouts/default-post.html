@@ -6,7 +6,7 @@
     <body>
 
     {% include header.html %}
-    <div class="post-image" style="background-image: url(/../assets/img/bsmashing-group-cover.jpg); background-position: 50%;">
+    <div class="post-image" {% if page.postimage %} style="background-image: url({{ page.postimage }}); background-position: {{ page.postimageposition }};"{% endif %};">
       
         <header class="post-header">
           <div class="wrap">
@@ -24,8 +24,10 @@
         </div>
       </div>
       <div class="wrap">
-
-      <p class="post-category">Post category: <span class="category-span">{{ page.categories.last }}</span></p>
+      <div class="post-head clearfix">
+        <p class="post-category">Post category: <span class="category-span">{{ page.categories.last }}</span></p>
+        <p class="post-lang">{{ page.language }}</p>
+      </div>
       {{ content }}
       </div>
     </div>

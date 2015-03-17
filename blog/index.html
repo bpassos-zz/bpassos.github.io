@@ -9,6 +9,7 @@ layout: default-blog
     {% for post in site.posts %}
       <li>
         <div class="post-info">
+          <span class="post-lang">{{ post.language }}</span>
           <span class="post-cat">{{ post.categories.last }}</span>
           <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
         </div>
