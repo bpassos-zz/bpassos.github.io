@@ -3,6 +3,9 @@ layout: post
 title:  "#bsmashing - a booking.com and smashing magazine event"
 date:   2014-10-28
 categories: events
+language: en-uk
+postimage: /../assets/img/bsmashing-group-cover.jpg
+postimageposition: 0px -440px
 ---
 
 On Friday 10th October, Booking.com hosted the first-ever combined Booking.com and Smashing Magazine event, B.Smashing, at our head office in Amsterdam.
