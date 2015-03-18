@@ -316,10 +316,12 @@ li {
 
 .home .profile {
   text-align: center;
+  height: 180px;
 }
 
 .home .profile img {
   width: 160px;
+  display: none;
 }
 
 .home .intro {
