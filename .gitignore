@@ -1,4 +1,3 @@
 _site
-deploy
 rsync_exclude.txt
 config/
