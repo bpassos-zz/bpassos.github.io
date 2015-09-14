@@ -198,7 +198,7 @@ li {
 .dribbble-feed-wrapper {
   background: #F5F5F5;
   padding: 30px;
-  height: 500px;
+  min-height: 500px;
 }
 
 .dribbble-feed-wrapper .wrap h1 {
@@ -641,6 +641,17 @@ li {
 /* ----------------------------------------------------------*/
 
 
+@media screen and (max-width: 918px) {
+  .dribbble-feed {
+    text-align: center;
+  }
+
+  .shot {
+    float: none;
+    display: inline-block;
+  }
+}
+
 @media screen and (max-width: 750px) {
 
   .home .intro {
@@ -700,45 +711,6 @@ li {
     z-index: 10;
     top: 0px; right: 8px;
   }
-
-  /*.site-nav {
-    position: fixed;
-    z-index: 10;
-    top: 14px; right: 8px;
-    background-color: white;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    border: 1px solid #e8e8e8;
-  }*/
-
-  /*.site-nav .menu-icon {
-    display: block;
-    font-size: 24px;
-    color: #505050;
-    float: right;
-    width: 36px;
-    text-align: center;
-    line-height: 36px;
-  }
-
-  .site-nav .menu-icon svg { width: 18px; height: 16px; }
-
-  .site-nav .trigger {
-    clear: both;
-    margin-bottom: 5px;
-    display: none;
-  }
-
-  .site-nav:hover .trigger { display: block; }
-
-  .site-nav .page-link {
-    display: block;    
-    text-align: right;
-    line-height: 1.25;
-    padding: 5px 10px;
-    margin: 0;
-  }*/
 
   .post-header h1 { font-size: 36px; }
   .post-content h2 { font-size: 28px; }
