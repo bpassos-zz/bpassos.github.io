@@ -198,6 +198,7 @@ li {
 .dribbble-feed-wrapper {
   background: #F5F5F5;
   padding: 30px;
+  height: 500px;
 }
 
 .dribbble-feed-wrapper .wrap h1 {
@@ -564,6 +565,11 @@ li {
   font-size: 20px;
   color: #888;
   margin: 35px;
+}
+
+.spinner {
+  text-align: center;
+  margin-top: 70px;
 }
 
 /* Syntax highlighting styles */
