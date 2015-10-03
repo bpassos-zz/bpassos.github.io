@@ -9,7 +9,8 @@
 html, body { height: 100%; }
 
 body {
-  font-family: 'Open sans', Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif, Helvetica;quotes: ;
+  /*font-family: 'Open sans', Helvetica, Arial, sans-serif;*/
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
@@ -64,6 +65,14 @@ li {
   background-color: #060010;
   padding: 5px 0 0;
   opacity: 0.9;
+  width: 100%;
+  z-index: 5;
+}
+
+.sticky {
+  background-color: #060010;
+  padding: 5px 0 0;
+  opacity: 0.9;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -101,6 +110,7 @@ li {
   letter-spacing: -.5px;
   -webkit-transition:color 400ms;
   transition:color 400ms;
+  font-family: "Montserrat", sans-serif, Helvetica;
 }
 
   .site-nav a:hover {
@@ -298,7 +308,6 @@ li {
 /* ----------------------------------------------------------*/
 
 .page-content {
-  margin-top: 60px;
   background-color: #fff;
 }
 
@@ -333,11 +342,17 @@ li {
   font-weight: 600;
 }
 
-  .home .intro p {
+  .intro-description {
     margin: 40px 0;
-    font-size: 18px;
-    color: #666;text-align: center;
-    font-weight: 300;
+    font-family: "Arapey",serif;
+    color: #666;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    /* letter-spacing: 0.1em; */
+    /* text-transform: uppercase; */
+    font-size: 1.5em;
+    /* letter-spacing: 0.15em; */
   }
 
   .home .intro .intro-thin {
@@ -674,10 +689,6 @@ li {
 
   .shot a img {
     width: 200px;
-  }
-
-  .site-header {
-    height: 45px;
   }
 
   .footer-col-1 { width: 50%; }
