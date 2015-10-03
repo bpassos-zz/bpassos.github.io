@@ -368,8 +368,8 @@ li {
   .posts p {
     margin: 10px 0;
     color: #646464;
-    font-family: "Arapey",serif;
-    font-size: 1.2em;
+    font-family: 'open sans', Helvetica, sans-serif;
+    font-size: 17px;
   }
 
 .posts li { 
@@ -488,7 +488,9 @@ li {
 
 .post-content { 
   margin: 0 0 30px;
-  font-size: 20px;
+  font-family: 'open sans', Helvetica, sans-serif;
+  font-size: 17px;
+  color: dimgrey;
 }
 
 .post-content > * { 
@@ -519,12 +521,6 @@ li {
 }
 
 .post-content h4 {
-  font-size: 20px;
-  letter-spacing: -1px;
-}
-
-.post-content {
-  font-family: 'Open Sans', sans-serif, Helvetica;
   font-size: 20px;
   letter-spacing: -1px;
 }
