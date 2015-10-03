@@ -62,6 +62,8 @@ li {
 /* Site header */
 
 .site-header {
+  position: fixed;
+  top: 0;
   background-color: #060010;
   padding: 5px 0 0;
   opacity: 0.9;
@@ -309,6 +311,7 @@ li {
 
 .page-content {
   background-color: #fff;
+  margin-top: 60px;
 }
 
 
@@ -365,6 +368,8 @@ li {
   .posts p {
     margin: 10px 0;
     color: #646464;
+    font-family: "Arapey",serif;
+    font-size: 1.2em;
   }
 
 .posts li { 
@@ -514,6 +519,12 @@ li {
 }
 
 .post-content h4 {
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+.post-content {
+  font-family: 'Open Sans', sans-serif, Helvetica;
   font-size: 20px;
   letter-spacing: -1px;
 }
