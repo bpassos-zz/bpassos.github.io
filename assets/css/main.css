@@ -14,7 +14,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
-  background-color: #fdfdfd;
 }
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
@@ -62,8 +61,6 @@ li {
 /* Site header */
 
 .site-header {
-  position: fixed;
-  top: 0;
   background-color: #060010;
   padding: 5px 0 0;
   opacity: 0.9;
@@ -190,12 +187,12 @@ li {
 
 .social {
   text-align: center;
-  margin: 40px 0 40px 0;
+  margin: 70px 0 70px 0;
 }
 
   .social ul li {
     margin: 0 15px;
-    font-size: 30px;
+    font-size: 35px;
     color: #3B2959;
   }
 
@@ -310,8 +307,7 @@ li {
 /* ----------------------------------------------------------*/
 
 .page-content {
-  background-color: #fff;
-  margin-top: 60px;
+  background-color: #f6f6f6;
 }
 
 
@@ -329,17 +325,18 @@ li {
 
 .home .profile {
   text-align: center;
-  height: 180px;
+  height: 220px;
+  margin: 50px 0 50px;
 }
 
 .home .profile img {
-  width: 160px;
+  width: 220px;
   display: none;
 }
 
 .home .intro {
   margin: 8px 0;
-  font-size: 15px;
+  font-size: 18px;
   color: #666;
   text-align: center;
   font-weight: 600;
@@ -347,14 +344,15 @@ li {
 
   .intro-description {
     margin: 40px 0;
-    font-family: "Arapey",serif;
+    font-family: "Open Sans",serif;
     color: #666;
     text-align: center;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
     /* letter-spacing: 0.1em; */
     /* text-transform: uppercase; */
-    font-size: 1.5em;
+    font-size: 1.2em;
+    line-height: 40px;
     /* letter-spacing: 0.15em; */
   }
 
@@ -677,11 +675,12 @@ li {
 @media screen and (max-width: 750px) {
 
   .home .intro {
-    font-size: 14px;
+    font-size: 16px;
   }
 
-  .home .intro p {
-    font-size: 16px;
+  .intro-description {
+    line-height: 35px;
+    font-size: 1.1em;
   }
 
   .title a{
@@ -720,14 +719,8 @@ li {
 @media screen and (max-width: 600px) {
 
   .wrap { 
-    padding: 0 12px;
+    padding: 0 20px;
     position: relative;
-  }
-
-  .site-nav {
-    position: fixed;
-    z-index: 10;
-    top: 0px; right: 8px;
   }
 
   .post-header h1 { font-size: 36px; }
@@ -738,10 +731,30 @@ li {
   .post-content ul,
   .post-content ol { padding-left: 10px; }
 
+  .home .profile {
+    height: 180px;
+  }
+
+  .home .profile img {
+    width: 180px;
+  }
+
   .site-footer .column {
     float: none;
     clear: both;
     width: auto;
     margin: 0 0 15px; }
 
+}
+
+@media screen and (max-width: 350px) {
+
+  .home .intro {
+    font-size: 14px;
+  }
+
+  .intro-description {
+    line-height: 30px;
+    font-size: 1.1em;
+  }
 }
