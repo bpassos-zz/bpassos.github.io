@@ -1,0 +1,126 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$heading-color:    #002A9E;
+$text-color:       #3E464C;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+.header {
+    background: #FFF;
+}
+
+.hero {
+    background: #f2f2f2;
+    min-height: 350px;
+}
+
+.site-logo {
+    float: left;
+
+    a {
+        img {
+            width: 200px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+    }
+
+}
+
+.content {
+    margin-top: 40px;
+}
+
+.footer-copy {
+    float: left;
+    color: #CDCDCD;
+    font-size: 12px;
+}
+
+.footer-links {
+    float: right;
+}
+
+/*
+    Nossos trabalhos 
+*/
+
+.works {
+    margin: 40px 0;
+}
+
+.works__cells {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works__cell {
+    width: 32%;
+    height: 250px;
+    margin-right: .7%;
+    margin-bottom: 8px;
+    background: #DDD;
+    display: flex;
+    flex: 1 0 auto;
+    background-size: cover;
+    position: relative;
+}
+
+.works__cell-title {
+    width: 100%;
+    font-size: 13px;
+    box-sizing: border-box;
+    color: #DDD;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background: rgba(0,0,0,0.7);
+}
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;

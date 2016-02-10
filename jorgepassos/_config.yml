@@ -1,0 +1,19 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Jorge Passos - Arquitetura e Restauro L.t.d.a
+email: jp@jorgepassos.com.br
+description: > # this means to ignore newlines until "baseurl:"
+  Jorge Passos Arquitetura e Restauro fundada no ano de 1992, e uma empresa constituida por cotas de participacao limitada, com atuacao no ambito da arquitetura, construcao civil e restauracao do patrimonio cultural edificadoJorge Passos Arquitetura e Restauro fundada no ano de 1992, e uma empresa constituida por cotas de participacao limitada, com atuacao no ambito da arquitetura, construcao civil e restauracao do patrimonio cultural edificadoJorge Passos Arquitetura e Restauro fundada no ano de 1992, e uma empresa constituida por cotas de participacao limitada, com atuacao no ambito da arquitetura, construcao civil e restauracao do patrimonio cultural edificado
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://jorgepassos.com.br" # the base hostname & protocol for your site
+twitter_username: brunopassos
+github_username:  bpassos
+
+# Build settings
+markdown: kramdown
